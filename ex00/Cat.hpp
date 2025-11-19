@@ -3,7 +3,7 @@
 #include "Animal.hpp"
 #include <iostream>
 
-class Cat : Animal {
+class Cat : public Animal {
 public:
   Cat();
   Cat(const Cat&);
