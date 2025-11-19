@@ -1,13 +1,15 @@
 NAME = hehe
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 FILES = main.cpp\
 		Cat.cpp\
 		Dog.cpp\
-		Animal.cpp
+		Animal.cpp\
+		Brain.cpp
 HFILES = Animal.hpp\
 		 Cat.hpp\
-		 Dog.hpp
+		 Dog.hpp\
+		 Brain.hpp
 
 OBJ = $(FILES:.cpp=.o)
 
@@ -18,7 +20,7 @@ $(NAME): $(OBJ) $(HFILES)
 	$(CC) $(CFLAGS)  $(OBJ) -o $(NAME)
 
 
-%.o : %.c
+%.o : %.cpp
 	$(CC) $(CFLAGS) -c -O  $< -o $@
 	
 clean :
@@ -28,6 +30,6 @@ fclean : clean
 	rm -f $(NAME)
 
 re : fclean all
-	
+
 
 .PHONY: all re fclean clean
