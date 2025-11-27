@@ -19,7 +19,6 @@ Dog::~Dog(){
 }
 
 Dog& Dog::operator=(const Dog& obj){
-	this->brain = new Brain;
 	*this->brain = *obj.brain;
 	this->setType("Dog");
 	return (*this);

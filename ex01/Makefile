@@ -1,13 +1,17 @@
 NAME = hehe
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = main.cpp\
 		Cat.cpp\
+		WrongCat.cpp\
 		Dog.cpp\
 		Animal.cpp\
+		WrongAnimal.cpp\
 		Brain.cpp
 HFILES = Animal.hpp\
 		 Cat.hpp\
+		 WrongCat.hpp\
+		 WrongAnimal.hpp\
 		 Dog.hpp\
 		 Brain.hpp
 
