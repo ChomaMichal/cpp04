@@ -22,7 +22,7 @@ void	Animal::setType(const std::string &str){
 	this->type = str;
 }
 
-std::string		Animal::getType(void){
+std::string		Animal::getType(void) {
 	return (this->type);
 }
 

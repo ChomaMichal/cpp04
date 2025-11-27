@@ -6,7 +6,7 @@ Dog::Dog(){
 }
 
 Dog::Dog(const Dog& other){
-	this->setType("Dog");
+	this->setType(other.type);
 	std::cout << "Dog has been created" << std::endl;
 }
 

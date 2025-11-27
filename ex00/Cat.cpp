@@ -6,7 +6,7 @@ Cat::Cat(){
 }
 
 Cat::Cat(const Cat& other){
-	this->setType("Cat");
+	this->setType(other.type);
 	std::cout << "Cat has been created" << std::endl;
 }
 
