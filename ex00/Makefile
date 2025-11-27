@@ -3,10 +3,14 @@ CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = main.cpp\
 		Cat.cpp\
+		WrongCat.cpp\
 		Dog.cpp\
+		WrongAnimal.cpp\
 		Animal.cpp
 HFILES = Animal.hpp\
 		 Cat.hpp\
+		 WrongAnimal.cpp\
+		 WrongCat.hpp\
 		 Dog.hpp
 
 OBJ = $(FILES:.cpp=.o)
