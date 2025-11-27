@@ -1,7 +1,7 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
 int main(){
-	//Animal a;
+	 // Animal a;
 	
 	Cat c;
 	Dog d;

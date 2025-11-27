@@ -7,6 +7,7 @@ Cat::Cat(){
 }
 
 Cat::Cat(const Cat& other){
+	this->brain = new Brain;
 	this->brain = other.brain;
 	this->setType("Cat");
 	std::cout << "Cat has been created" << std::endl;
@@ -18,6 +19,7 @@ Cat::~Cat(){
 }
 
 Cat& Cat::operator=(const Cat& obj){
+	this->brain = new Brain;
 	this->brain = obj.brain;
 	this->setType("Cat");
 	return (*this);

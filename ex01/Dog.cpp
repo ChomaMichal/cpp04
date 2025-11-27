@@ -7,7 +7,8 @@ Dog::Dog(){
 }
 
 Dog::Dog(const Dog& other){
-	this->brain = other.brain;
+	this->brain = new Brain;
+	*this->brain = *other.brain;
 	this->setType("Dog");
 	std::cout << "Dog has been created" << std::endl;
 }
@@ -18,7 +19,8 @@ Dog::~Dog(){
 }
 
 Dog& Dog::operator=(const Dog& obj){
-	this->brain = obj.brain;
+	this->brain = new Brain;
+	*this->brain = *obj.brain;
 	this->setType("Dog");
 	return (*this);
 }
